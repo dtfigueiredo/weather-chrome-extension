@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* RESET */
+// 1. Use a more-intuitive box-sizing model.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// 2. Remove default margin
+* {
+  margin: 0;
+}
+
+// 3. Allow percentage-based heights in the application
+html,
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+// 6. Improve media defaults
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* STYLING */
+body {
+  background: #6d6e98;
+  background: -webkit-linear-gradient(181deg, #6d6e98 0%, #808a72 100%);
+  background: linear-gradient(181deg, #6d6e98 0%, #808a72 100%);
+
+  background-image: url('https://images.unsplash.com/photo-1568816756611-aaf3d3bd0ef4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1440&q=80');
+  background-size: cover;
+  background-position: top top;
+  background-repeat: no-repeat;
+
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  width: 380px;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid #333;
+  background: #6d6e9885;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 3px solid rgba(255, 255, 255, 0.18);
+}
+
+.header .title {
+  font-size: 1.5rem;
+}
+
+.article {
+  padding: 0.5rem;
+}
+
+.article .subtitle {
+  font-size: 1.5rem;
+}
+
+.subcontainer h3 {
+  display: flex;
+  justify-content: center;
+  items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.subcontainer h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subcontainer h4 .condition {
+  font-size: 1.125rem;
+}
+
+.subcontainer.min-max {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subcontainer.min-max h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

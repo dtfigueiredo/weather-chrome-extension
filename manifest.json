@@ -1,0 +1,19 @@
+{
+  "name": "Weather in my city",
+  "version": "1.0.0",
+  "manifest_version": 3,
+
+  "author": "Daniel Figueiredo",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Weather in my city"
+  },
+  "description": "The weather in my city searches for the forecast based on the weather in the user's weather city",
+  "icons": {
+    "16": "./assets/wind.png",
+    "32": "./assets/wind.png",
+    "48": "./assets/wind.png",
+    "128": "./assets/wind.png"
+  },
+  "permissions": ["geolocation"]
+}
